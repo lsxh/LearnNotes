@@ -1,0 +1,34 @@
+{
+	"title" : "学习笔记",
+	"language": "zh-hans",
+	"author": "低调小怪",
+	"description": "Book_note",
+	"plugins":[
+		"splitter",
+		"tbfed-pagefooter",
+		"expandable-chapters",
+		"-lunr",
+		"-search",
+		"search-plus",
+		"copy-code-button",
+		"sectionx",
+        "favicon",
+		"back-to-top-button"
+	],
+	"pluginsConfig":{
+		"tbfed-pagefooter":{
+			"copyright":"Copyright 2018 Book_note",
+			"modify_label":"该文件修订时间:",
+			"modify_format":"YYYY-MM-DD HH:mm:ss"
+		},
+		"sectionx":{
+			"tag":"b"
+		},
+        "favicon": {
+            "shortcut": "./assets/images/favicon.ico",
+            "bookmark": "./assets/images/favicon.ico"
+		},
+		"expandable-chapters":{}
+	}
+
+}
