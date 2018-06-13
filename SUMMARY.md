@@ -6,7 +6,7 @@
         * [q](./notes/python/python.md)
     * [git笔记](./notes/git/git.md)
         * [git安装](./notes/git/install.md)
-        * [git常用命令](./notes/command.md)
+        * [git常用命令](./notes/git/command.md)
         * [git演示](./notes/git/demo.md)
     * [gitbook笔记](./notes/gitbook/gitbook.md)
         * [安装](./notes/gitbook/install.md)(./note/gitbook/install.md)
