@@ -37,6 +37,8 @@ git push origin master
 
 ### ***注意:如果你使用了git init然后又使用git clone url提交的时候会提示仓库不可用***
 
+**(使用git init 命令后会在当前目录下创建一个 .git 文件，再使用git clone url 会在当前目录下新建一个含有 .git 的文件夹，所以相当于使用git init创建的 .git 没有仓库)**
+
 ![img](./imgs/error_01.png)
 
 ### ***注意:如果直接push也可能报错，你就要先pull一下，解除冲突，再强行push***
