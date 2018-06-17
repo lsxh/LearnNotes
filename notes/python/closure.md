@@ -78,3 +78,14 @@ f1()
 f2()
 # 函数f1,f2不发生改变，调用方式也不变，但函数功能增加
 ```
+
+### 类装饰器
+
+```python
+class A(object):
+    pass
+# class 装饰器
+@A
+def fun():
+    pass
+```
