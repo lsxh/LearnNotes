@@ -8,6 +8,8 @@
         * [closure(闭包)](./notes/python/closure.md)
         * [正则](./notes/python/regular.md)
         * [常用模块](./notes/python/mudule.md)
+        * [pdb调试](./notes/python/pdb.md)
+        * [多任务](./nodes/multitasking.md)
         * [杂项](./notes/python/sundry.md)
     * [git笔记](./notes/git/git.md)
         * [git安装](./notes/git/install.md)
