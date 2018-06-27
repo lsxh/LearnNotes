@@ -63,6 +63,8 @@ b = a
 sys.getrefcount(a)  # 查看a被引用的次数
 ```
 
+- time.tiem() #记录当前时间  1529924632.6713235
+
 ## Garbage collection(GC模块垃圾回收)
 
 c,c++使用malloc
@@ -78,3 +80,4 @@ gc.enable()  # 开启gc
 gc.isenable()  # 查看是否开启
 gc.get_count()  # 获取当前自动执行垃圾回收的计数器，返回一个长度为三的列表
 gc.get_threshold()  # 获取gc模块自动执行垃圾回收的频率(固定值(700,10,10))
+```
