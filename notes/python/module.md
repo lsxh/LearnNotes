@@ -40,3 +40,4 @@
 os.mkdir("file_name")  # 创建文件夹
 os.rmdir("file_name/")  # 删除文件夹
 os.list(path)  # 返回列表，列出路径下所有文件
+```
