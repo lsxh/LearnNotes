@@ -24,5 +24,5 @@
     * [Markdown笔记](./notes/markdown/markdown.md)
         * [格式](./notes/markdown/format.md)
         * [demo](./notes/markdown/demo.md)
-    * [Win32编程](./note/Win32/Win32.md)
+    * [Win32编程](./notes/Win32/Win32.md)
 * [关于作者](about.md)

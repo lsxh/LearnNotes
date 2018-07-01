@@ -2,6 +2,8 @@
 
 ## 以下内容在deepin系统与Windows下的网络调试助手间完成
 
+## UDP
+
 进程间通信的一种方式，能实现不同主机间线程的通信
 
 ```python
@@ -113,3 +115,57 @@ def main():
 if __name__ == "__main__":
     main()
 ```
+
+## TCP
+
+```python
+from socket import *
+t = socket(AF_INET,SOCK_STREAM)  # 创建TCP套接字
+t.bind(("",8080))  # 绑定电脑里的任何IP，并设置 8080 端口
+t.listen(5)  # 设置监听最大为 5
+t.accept()  # 返回一个元组 (client_socket,client_socket_info)
+            # client_socket:返回新客户端的套接字
+            # client_socket_info:对方的 ip 以及 port
+t.connect()  # 连接
+t.send()  #  udp使用sendto
+t.recv()  #  udp使用recvfrom
+t.close()
+```
+
+- serve(服务器)端
+
+```python
+#　服务器端
+from socket import *
+serve_socket = socket(AF_INET,SOCK_STREAM)  # 创建TCP套接字
+serve_socket.bind(("",8080))  # 绑定电脑里的任何IP，并设置 8080 端口
+serve_socket.listen(5)  # 设置监听最大为 5
+# serve_socket.accept()  # 返回一个元组 (client_socket,client_socket_info)
+            # client_socket:返回新客户端的套接字
+            # client_socket_info:对方的 ip 以及 port
+client_socket,client_socket_info = serve_socket.accept()  # 对结果进行解包
+recv_data = client_socket.recv(1024) 　# 接收的数据,udp中使用 .recvfrom(1024)
+print("[%s]:%s"%(str(recv_data[1]), recv_data[0]))
+client_socket.close()
+serve_socket.close()
+```
+
+![img](./imgs/tcp_01.png)
+![img](./imgs/tcp_02.png)
+
+- client(客户)端
+
+```python
+from socket import *
+client_socket = socket(AF_INET, SCOK_STREAM)  # 创建TCP套接字
+serve_addr = ("192.168.0.14", 8080)
+clinet_socket.connect(serve_addr)
+serve_socket.send("clientInfromation")
+recv_data = serve_socket.recv(1024)
+print("recv_data:%s"%recv_data)
+serve_socket.close()
+# 没有进行编码和解码
+```
+
+![img](./imgs/tcp_03.png)
+![img](./imgs/tcp_04.png)
