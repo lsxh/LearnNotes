@@ -54,5 +54,8 @@ re.match("\d*","abcd").group()  # 结果 ''
 re.match("\d+","123abcd").group()  # 结果 123
 re.match("\d?","abc").group()  # 结果 ''
 re.match("\d?","123abc").group()  # 结果 1
-
+# r"string" 原始字符串,加上 r 后能自动转义
+re.match("\d?",r"123abc").group()
 ```
+
+12
