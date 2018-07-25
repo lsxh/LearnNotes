@@ -101,3 +101,6 @@ gc.get_threshold()  # 获取gc模块自动执行垃圾回收的频率(固定值(
   `r"\nabc"`=>`"\\nabc"`
 - 二进制 b(binary)
   `b"abc"`
+- python3中md5库放到了hashlib中  
+    `python2 import md5`
+    `python3 import hashlib`
