@@ -37,3 +37,15 @@ sorted([1,53,2])  # sorted排序
 ```
 
 ## functiontools(常用模块，管理工具)
+
+''''''
+
+### count() 统计字符串某个字符出现的次数
+
+```python
+str.count(sub, start= 0,end=len(string))
+# sub 搜索的子字符串
+# start 字符串开始搜索的位置，默认为0
+# end 结束搜索的位置，默认len(str)
+'abc'.count('ab')  # 1
+```

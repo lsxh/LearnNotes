@@ -41,3 +41,18 @@ os.mkdir("file_name")  # 创建文件夹
 os.rmdir("file_name/")  # 删除文件夹
 os.list(path)  # 返回列表，列出路径下所有文件
 ```
+
+## math
+
+- from math import *
+- import math
+
+```python
+import math
+math.ceil(2.1)  # 向上取整 3
+```
+
+```python
+round(2.5)  # 四舍五入 3
+int(2.5)  # 向下取整 2
+```

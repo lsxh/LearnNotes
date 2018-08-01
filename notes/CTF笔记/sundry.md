@@ -362,7 +362,7 @@ falg{NSCTF_e6532a34928a3d1dadd0b049d5a3cc57}
 使用RoutePasswordView打开，找到用户名。  
 ![png](./sundry/宽带信息泄露_02.png)  
 
-### 隐写1
+### 隐写2
 
 ![png](./sundry/隐写2_01.png)  
 下载得到一张图片  
@@ -376,7 +376,7 @@ binwalk -e Welcome_.jpg
 得到flag.zip和提示.jpg提示三位密码，用Advanced Archive Password Recovery爆破，得到一张图片，notepad++打开，末尾base64解密(去掉括号)  
 ![png](./sundry/隐写2_02.png)  
 
-### 隐写2
+### 隐写3
 
 ![png](./sundry/dabai_02.png)  
 下载得到[58d54bd3e134e.zip](./sundry/58d54bd3e134e.zip)解压得到一张大白的图片，stegsolve处理没有结果，图片不全，修改图片高度得到结果。  

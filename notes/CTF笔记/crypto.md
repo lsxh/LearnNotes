@@ -18,7 +18,7 @@
 - Url(%):[站长工具](http://tool.chinaz.com/tools/urlencode.aspx)  
 - XXencode:将输入文本以每三个字节为单位进行编码。如果最后剩下的资料少于三个字节，不够的部份用零补齐。(末尾容易出现'+'号)[在线解码、编码](http://web.chacuo.net/charsetxxencode)  
 - [DES、AES、Rabbit、RC4、TripleDes加密解密](http://tool.oschina.net/encrypt/)
-  - DES对称加密：一般使用蛮力会密钥搜索破解  
+  - DES对称加密：一般使用蛮力对密钥搜索破解  
   - AES对称密码，旨在取代DES一般有较多`+`号  
   - Rabbit加密：(与base64相似)  
   - RC4加密：  
@@ -189,10 +189,10 @@ if __name__=='__main__':
 
 ## 围在栅栏中的爱
 
-![img](./crypto/围在栅栏中的爱.png)
+![img](./crypto/围在栅栏中的爱.png)  
 先进行摩斯解码得到：KIQLWTFCQGNSOO  
 QWE题目中有QWE=ABC提示想到QWE加密（电脑键盘排序加密）  
-装换得到(两种情况列出对的情况)：RHASBENVAOYLII  
+转换得到(两种情况列出对的情况)：RHASBENVAOYLII  
 进行栅栏解码得到第一栏(从后往前读)  
 ![img](./crypto/围在栅栏中的爱_02.png)  
 注意提交格式，CTF{小写}
