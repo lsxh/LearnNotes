@@ -78,4 +78,45 @@ reObj.split(text)  # ['a', 'b', 'c', 'd']
 re.split('[, ]+',text)  # ['a','b','c','d']
 ```
 
-12
+```python
+import re
+# 给匹配的内容命名,在括号中加(?P<name>)
+pattern = r'(\w+)@(163|126|qq).(com|net|cn)'
+r = re.match(pattern,"lsxls@qq.com")
+r.group()  # lsxgls@qq.com
+r.group(1)  # lsxgls
+r.group(2)  # qq.com
+r.group(3)  # com
+re.match(r'(?P<name>\w+)@(163|126|qq).(com|net|cn)',s).group(0)
+re.match(r'(?P<name>\w+)(?P=name)',s)
+# ?P<name> 给匹配的内容命名
+# ?p= 使用前面匹配的内容
+```
+
+```python
+# re.search(), re.findall()
+import re
+re.serach(pattern, s)  # 搜寻符合条件的正则表达，找到一个则返回,返回一个对象
+re.findall(pattern, s)  # 返回所有匹配结果，返回一个列表
+```
+
+```python
+"""re.sub 替换"""
+import re
+re.sub(pattern, repl, s)  # 把 s中的匹配部分替换为repl(替换所有)，repl可以为一个函数
+
+def replace(res):  # 必须传参
+  # print(res.group())
+  return '100'
+print(re.sub(r'\d+',replace,"python=20,php=30"))  # python=100,php=100
+```
+
+- 贪婪模式，非贪婪模式
+
+```python
+"""贪婪模式下，会尽可能匹配更多的内容"""
+import re
+s = "The Number 2356-2131-990"
+re.match(r'(.+)(\d+)-(\d+)-(\d+)',s).groups()  # 结果: ('The Number 235','6-2131-990') 贪婪模式会匹配尽可能多的字符
+re.match(r'(.+?)(\d+)-(\d+)-(\d+)',s).groups()  # 结果: ('The Number ','2356-2131-990') 加上 ? 号 非贪婪模式
+```

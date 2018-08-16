@@ -169,5 +169,3 @@ serve_socket.close()
 
 ![img](./imgs/tcp_03.png)
 ![img](./imgs/tcp_04.png)
-
-Web2 05
