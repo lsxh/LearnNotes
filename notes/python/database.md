@@ -109,3 +109,13 @@ sql = "INSERT INTO test(name) VALUES (%s)"
 pamera = ['测试数据']
 m.excute(sql,params)  # excute方法
 ```
+
+- python2 安装MySQLdb  
+    ```bash
+    pip install mysql-python
+    ```  
+    如果报下面的错  
+    ![png](./imgs/mysql-python.png)  
+    ```bash
+    sudo apt-get install python-dev
+    ```  

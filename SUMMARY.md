@@ -37,4 +37,6 @@
     * [隐写](./notes/CTF笔记/隐写.md)  
     * [Misc](./notes/CTF笔记/sundry.md)  
     * [工具](./notes/CTF笔记/工具.md)  
+  * [软件破解和使用](./notes/software/software.md)
+    * [Navicat](./notes/software/navicat.md)
 * [关于作者](about.md)  
