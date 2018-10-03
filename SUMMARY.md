@@ -14,6 +14,7 @@
     * [socket](./notes/python/socket.md)  
     * [数据库](./notes/python/database.md)  
     * [Django](./notes/python/Django.md)  
+    * [tornado](./notes/python/tornado.md)  
     * [杂项](./notes/python/sundry.md)  
   * [git笔记](./notes/git/git.md)  
     * [git安装](./notes/git/install.md)  

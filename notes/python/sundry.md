@@ -104,34 +104,36 @@ gc.get_threshold()  # 获取gc模块自动执行垃圾回收的频率(固定值(
 - python3中md5库放到了hashlib中  
     `python2 import md5`
     `python3 import hashlib`
-- virtualenv 简单使用介绍
-  - 安装  
+
+### virtualenv 简单使用介绍  
+
+- 安装  
   
     ```bash
     pip install virtualenv 或 sudo apt-get install virtualenv
     ```
 
-  - 创建一个虚拟的环境，并命名env1。如果文件夹含中文名称，将会报错  
+- 创建一个虚拟的环境，并命名env1。如果文件夹含中文名称，将会报错  
 
     ```bash
     virtualenv env1  # 默认Python2.7
     virtualenv -p python3 env1  # 指定Python3
     ```
-  - 进入虚拟环境 在env1目录下
+- 进入虚拟环境 在env1目录下
 
     ```bash
     source env1/bin/activate
     ```
-  - 离开虚拟环境
+- 离开虚拟环境
 
     ```bash
     deactivate
     ```
-  - 安装virtualenvwrapper
+- 安装virtualenvwrapper
     ```bash
     sudo pip3 install virtualenvwrapper
     ```
-  - 配置
+- 配置
     ```bash
     sudo gedit ~/.bashrc
     ```
@@ -141,7 +143,10 @@ gc.get_threshold()  # 获取gc模块自动执行垃圾回收的频率(固定值(
   - 如果你是使用的pip3 安装的virtualenvwrapper，而系统默认使用python2.7，上面将会报错，需要在 ～/.bashrc 中加入VIRTUALENVWRAPPR_PYTHON=/usr/bin/python3  
     ![img](./imgs/virtualenvwrapper.png)  
   - 可以使用workon来切换虚拟环境
-
+  - 删除虚拟环境
+    ```bash
+    rmvirtualenv venv
+    ```
 - python3连接数据库(python3 只支持pymysql)  
   python3中不支持MYSQLdb，以及python-mysql，使用pip安装这两会报错，所以在使用django创建app的时候也会报错。此时应该在`__init__.py`文件中加入两句话：  
   import pymysql  
