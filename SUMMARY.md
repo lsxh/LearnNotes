@@ -28,6 +28,7 @@
     * [格式](./notes/markdown/format.md)  
     * [demo](./notes/markdown/demo.md)  
   * [Win32编程](./notes/Win32/Win32.md)  
+  * [Qt笔记](./notes/Qt/Qt.md)
   * [Linux笔记](./notes/Linux/Linux.md)  
     * [文件管理](./notes/Linux/文件管理.md)  
     * [常用命令](./notes/Linux/常用命令.md)  
