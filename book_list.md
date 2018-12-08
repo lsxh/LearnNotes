@@ -13,3 +13,5 @@
 ## [Linux](./notes/Linux/Linux.md)  
 
 ## [CTF笔记](./notes/CTF笔记/CTF.md)  
+
+## [软件破解和使用](./notes/software/software.md)  
