@@ -140,7 +140,7 @@ gc.get_threshold()  # 获取gc模块自动执行垃圾回收的频率(固定值(
     添加  
     export WORKON_HOME=$HOME/.virtualenvs  # 虚拟环境将安装到这个目录下
     source /usr/local/bin/virtualenvwrapper.sh  
-  - 如果你是使用的pip3 安装的virtualenvwrapper，而系统默认使用python2.7，上面将会报错，需要在 ～/.bashrc 中加入VIRTUALENVWRAPPR_PYTHON=/usr/bin/python3  
+  - 如果你是使用的pip3 安装的virtualenvwrapper，而系统默认使用python2.7，上面将会报错，需要在 ～/.bashrc 中加入VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3  
     ![img](./imgs/virtualenvwrapper.png)  
   - 可以使用workon来切换虚拟环境
   - 删除虚拟环境
